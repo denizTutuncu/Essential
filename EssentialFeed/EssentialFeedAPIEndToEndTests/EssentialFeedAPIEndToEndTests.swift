@@ -27,7 +27,6 @@ class EssentialFeedAPIEndToEndTests: XCTestCase {
             XCTFail("Expected successful feed result, got \(error) instead.")
         default:
             XCTFail("Expected successful feed result, got no result instead.")
-            
         }
     }
     
@@ -98,5 +97,4 @@ class EssentialFeedAPIEndToEndTests: XCTestCase {
     private func imageURL(at index: Int) -> URL {
         return URL(string: "https://url-\(index+1).com")!
     }
-    
 }
