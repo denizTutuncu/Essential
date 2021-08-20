@@ -22,6 +22,7 @@
 		2E05B93C26C651220010860E /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E05B92926C601BF0010860E /* XCTestCase+MemoryLeakTracking.swift */; };
 		2E216DFE26CF7D210078D4A7 /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E216DFD26CF7D210078D4A7 /* CacheFeedUseCaseTests.swift */; };
 		2EFDAD6126D0674C00430114 /* LocalFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFDAD6026D0674C00430114 /* LocalFeedLoader.swift */; };
+		2EFDAD6326D0680100430114 /* FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFDAD6226D0680100430114 /* FeedStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		2E05B93526C649770010860E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E216DFD26CF7D210078D4A7 /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 		2EFDAD6026D0674C00430114 /* LocalFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedLoader.swift; sourceTree = "<group>"; };
+		2EFDAD6226D0680100430114 /* FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				2EFDAD6026D0674C00430114 /* LocalFeedLoader.swift */,
+				2EFDAD6226D0680100430114 /* FeedStore.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				2E05B91A26C367CC0010860E /* FeedLoader.swift in Sources */,
 				2E05B92426C4F3320010860E /* FeedItemMapper.swift in Sources */,
 				2E05B92026C39B3B0010860E /* RemoteFeedLoader.swift in Sources */,
+				2EFDAD6326D0680100430114 /* FeedStore.swift in Sources */,
 				2EFDAD6126D0674C00430114 /* LocalFeedLoader.swift in Sources */,
 				2E05B92226C4F2C40010860E /* HTTPClient.swift in Sources */,
 				2E05B91826C367500010860E /* FeedItem.swift in Sources */,
