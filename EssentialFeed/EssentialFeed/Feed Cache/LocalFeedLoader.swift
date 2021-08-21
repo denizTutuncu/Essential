@@ -47,12 +47,13 @@ public final class LocalFeedLoader {
                 completion(.success([]))
             case .empty:
                 completion(.success([]))
-            }        }
+            }
+        }
     }
     
-    private var macCacheAgeInDays: Int { return 7 }
+    private var maxCacheAgeInDays: Int { return 7 }
     private func validate(_ timestamp: Date) -> Bool {
-        guard let maxCacheAge = calender.date(byAdding: .day, value: macCacheAgeInDays, to: timestamp) else { return false }
+        guard let maxCacheAge = calender.date(byAdding: .day, value: maxCacheAgeInDays, to: timestamp) else { return false }
         return currentDate() < maxCacheAge
     }
     
