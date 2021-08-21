@@ -8,7 +8,7 @@
 import XCTest
 import EssentialFeed
 
-class CodableeFeedStore {
+class CodableFeedStore {
     
     private struct Cache: Codable {
         let feed: [CodableFeedImage]
@@ -135,8 +135,8 @@ class CodableFeedStoreTests: XCTestCase {
     
     //MARK:- Helpers
     
-    private func makeSUT(file: StaticString = #file, line: UInt = #line) -> CodableeFeedStore {
-        let sut =  CodableeFeedStore(storeURL: testSpecificStoreURL())
+    private func makeSUT(file: StaticString = #file, line: UInt = #line) -> CodableFeedStore {
+        let sut =  CodableFeedStore(storeURL: testSpecificStoreURL())
         trackForMemoryLeaks(sut, file: file, line: line)
         return sut
     }
