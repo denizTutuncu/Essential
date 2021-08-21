@@ -62,7 +62,7 @@ public final class LocalFeedLoader {
                 
             case .empty, .found: break
             }
-        }√
+        }
     }
     
     private var maxCacheAgeInDays: Int { return 7 }
