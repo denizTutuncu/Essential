@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class FeedItemMapper {
+final class FeedItemsMapper {
     
     private struct Root: Decodable {
         let items: [RemoteFeedItem]
