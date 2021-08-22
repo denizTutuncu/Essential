@@ -145,7 +145,7 @@ class CodableFeedStoreTests: XCTestCase {
             op3.fulfill()
         }
         
-        wait(for: completedOperationsInOrder, timeout: 5.0)
+        waitForExpectations(timeout: 5.0)
         XCTAssertEqual(completedOperationsInOrder, [op1, op2, op3], "Expected side-effects to run serially but opertions finished in the wrong order")
     }
     
@@ -177,7 +177,7 @@ class CodableFeedStoreTests: XCTestCase {
             deletionError = receivedDeletionError
             exp.fulfill()
         }
-        wait(for: [exp], timeout: 1.0)
+        wait(for: [exp], timeout: 10.0)
         return deletionError
     }
     
@@ -209,7 +209,7 @@ class CodableFeedStoreTests: XCTestCase {
             }
             exp.fulfill()
         }
-        wait(for: [exp], timeout: 1.0)
+        wait(for: [exp], timeout: 3.0)
     }
     
     private func setupEmptyStoreState() {
