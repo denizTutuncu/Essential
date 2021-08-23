@@ -9,7 +9,7 @@ import XCTest
 import EssentialFeed
 
 class CodableFeedStoreTests: XCTestCase, FailableFeedStoreSpecs {
-        
+    
     override func setUp() {
         super.setUp()
         setupEmptyStoreState()
@@ -88,16 +88,16 @@ class CodableFeedStoreTests: XCTestCase, FailableFeedStoreSpecs {
     }
     
     func test_insert_overridesPreviouslyInsertedCacheValues() {
-         let sut = makeSUT()
-         insert((uniqueImageFeed().local, Date()), to: sut)
-
-         let latestFeed = uniqueImageFeed().local
-         let latestTimestamp = Date()
-
-         insert((latestFeed, latestTimestamp), to: sut)
-
-         expect(sut, toRetrieve: .found(feed: latestFeed, timestamp: latestTimestamp))
-     }
+        let sut = makeSUT()
+        insert((uniqueImageFeed().local, Date()), to: sut)
+        
+        let latestFeed = uniqueImageFeed().local
+        let latestTimestamp = Date()
+        
+        insert((latestFeed, latestTimestamp), to: sut)
+        
+        expect(sut, toRetrieve: .found(feed: latestFeed, timestamp: latestTimestamp))
+    }
     
     func test_insert_deliversErrorOnInsertionError() {
         let invalidStoreURL = URL(string: "invalid://store-url")!
@@ -105,10 +105,10 @@ class CodableFeedStoreTests: XCTestCase, FailableFeedStoreSpecs {
         let feed = uniqueImageFeed().local
         let timestamp = Date()
         
-         let insertionError = insert((feed, timestamp), to: sut)
-
-         XCTAssertNotNil(insertionError, "Expected cache insertion to fail with an error")
-     }
+        let insertionError = insert((feed, timestamp), to: sut)
+        
+        XCTAssertNotNil(insertionError, "Expected cache insertion to fail with an error")
+    }
     
     func test_insert_hasNoSideEffectsOnInsertionError() {
         let invalidStoreURL = URL(string: "invalid://store-url")!
@@ -204,62 +204,6 @@ class CodableFeedStoreTests: XCTestCase, FailableFeedStoreSpecs {
         let sut =  CodableFeedStore(storeURL: storeURL ?? testSpecificStoreURL())
         trackForMemoryLeaks(sut, file: file, line: line)
         return sut
-    }
-    
-    @discardableResult
-    private func insert(_ cache: (feed: [LocalFeedImage], timestamp: Date), to sut: FeedStore) -> Error? {
-        let exp = expectation(description: "Wait for cache retrieval")
-        var insertionError: Error?
-        
-        sut.insert(cache.feed, timestamp: cache.timestamp) { receivedInsertionError in
-            insertionError = receivedInsertionError
-            exp.fulfill()
-        }
-        wait(for: [exp], timeout: 1.0)
-        return insertionError
-    }
-    
-    @discardableResult
-    private func deleteCache(from sut: FeedStore) -> Error? {
-        let exp = expectation(description: "Wait for cache deletion")
-        var deletionError: Error?
-        sut.deleteCachedFeed { receivedDeletionError in
-            deletionError = receivedDeletionError
-            exp.fulfill()
-        }
-        wait(for: [exp], timeout: 8.0)
-        return deletionError
-    }
-    
-    private func expect(_ sut: FeedStore, toRetrieveTwice expectedResult: RetrieveCachedFeedResult, file: StaticString = #file, line: UInt = #line) {
-        expect(sut, toRetrieve: expectedResult)
-        expect(sut, toRetrieve: expectedResult)
-    }
-    
-    private func expect(_ sut: FeedStore, toRetrieve expectedResult: RetrieveCachedFeedResult, file: StaticString = #file, line: UInt = #line) {
-        let exp = expectation(description: "Wait for cache retrieval")
-        
-        sut.retrieve { retrieveResult in
-            switch (expectedResult, retrieveResult) {
-            
-            case (.empty, .empty),
-                 (.failure, .failure):
-                break
-                
-            case let (
-                .found(expectedResultFeed, expectedResultTimestamp),
-                .found(retrieveRetrieveFeed, retrieveRetrieveTimestamp)
-            ):
-                
-                XCTAssertEqual(expectedResultFeed, retrieveRetrieveFeed)
-                XCTAssertEqual(expectedResultTimestamp, retrieveRetrieveTimestamp)
-                
-            default:
-                XCTFail("Expected to retrieve \(expectedResult), got \(retrieveResult) instead")
-            }
-            exp.fulfill()
-        }
-        wait(for: [exp], timeout: 3.0)
     }
     
     private func setupEmptyStoreState() {
