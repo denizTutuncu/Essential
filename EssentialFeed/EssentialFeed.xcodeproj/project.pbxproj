@@ -245,14 +245,38 @@
 			path = FeedStoreSpecs;
 			sourceTree = "<group>";
 		};
+		2E98F10D26D34310001385F8 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				2E98F10E26D3434E001385F8 /* Codable */,
+				2E98F10F26D34357001385F8 /* CoreDate */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		2E98F10E26D3434E001385F8 /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				2E98F0FE26D2F23E001385F8 /* CodableFeedStore.swift */,
+			);
+			path = Codable;
+			sourceTree = "<group>";
+		};
+		2E98F10F26D34357001385F8 /* CoreDate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreDate;
+			sourceTree = "<group>";
+		};
 		2EFDAD5F26D0672800430114 /* Feed Cache */ = {
 			isa = PBXGroup;
 			children = (
+				2E98F10D26D34310001385F8 /* Infrastructure */,
 				2EFDAD6026D0674C00430114 /* LocalFeedLoader.swift */,
 				2EFDAD6226D0680100430114 /* FeedStore.swift */,
 				2EFDAD6626D0725200430114 /* LocalFeedImage.swift */,
 				2E98F0FA26D0F042001385F8 /* FeedCachePolicy.swift */,
-				2E98F0FE26D2F23E001385F8 /* CodableFeedStore.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
