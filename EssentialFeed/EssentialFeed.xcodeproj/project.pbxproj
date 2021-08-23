@@ -211,6 +211,7 @@
 				2E98F0EF26D085A6001385F8 /* LoadFeedFromCacheUseCaseTests.swift */,
 				2E98F0F426D0DB7F001385F8 /* ValidateFeedCacheUseCaseTests.swift */,
 				2E98F0FC26D0FC77001385F8 /* CodableFeedStoreTests.swift */,
+				2E98F10026D32FAA001385F8 /* FeedStoreSpecs.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -220,7 +221,6 @@
 			children = (
 				2E98F0F226D0872A001385F8 /* FeedStoreSpy.swift */,
 				2E98F0F626D0E065001385F8 /* FeedCacheTestHelpers.swift */,
-				2E98F10026D32FAA001385F8 /* FeedStoreSpecs.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
