@@ -249,7 +249,6 @@
 			isa = PBXGroup;
 			children = (
 				2E98F10E26D3434E001385F8 /* Codable */,
-				2E98F10F26D34357001385F8 /* CoreDate */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -260,13 +259,6 @@
 				2E98F0FE26D2F23E001385F8 /* CodableFeedStore.swift */,
 			);
 			path = Codable;
-			sourceTree = "<group>";
-		};
-		2E98F10F26D34357001385F8 /* CoreDate */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CoreDate;
 			sourceTree = "<group>";
 		};
 		2EFDAD5F26D0672800430114 /* Feed Cache */ = {
@@ -537,7 +529,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
@@ -595,7 +587,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
@@ -609,6 +601,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 9DGMQB3935;
@@ -624,7 +617,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.deniztutuncu.EssentialFeed;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -635,6 +630,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 9DGMQB3935;
@@ -650,7 +646,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.deniztutuncu.EssentialFeed;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -671,6 +669,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.deniztutuncu.EssentialFeedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -692,6 +691,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.deniztutuncu.EssentialFeedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -710,6 +710,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.deniztutuncu.EssentialFeedAPIEndToEndTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -728,6 +729,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.deniztutuncu.EssentialFeedAPIEndToEndTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
