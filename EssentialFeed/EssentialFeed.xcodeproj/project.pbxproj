@@ -248,6 +248,7 @@
 		2E98F10D26D34310001385F8 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				2EEC994326DEDFE500FF7EFF /* CoreData */,
 				2E98F10E26D3434E001385F8 /* Codable */,
 			);
 			path = Infrastructure;
@@ -259,6 +260,13 @@
 				2E98F0FE26D2F23E001385F8 /* CodableFeedStore.swift */,
 			);
 			path = Codable;
+			sourceTree = "<group>";
+		};
+		2EEC994326DEDFE500FF7EFF /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		2EFDAD5F26D0672800430114 /* Feed Cache */ = {
