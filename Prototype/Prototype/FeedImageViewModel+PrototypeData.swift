@@ -14,7 +14,7 @@ extension FeedImageViewModel {
         return [
             FeedImageViewModel(
                 description: "Secret Cove is a really beautiful, hidden little pocket of sand that's actually not so secret anymore. However, if you get there bright and early in the morning, before anyone else has had a chance to leave fresh footprints in the sand, it will FEEL secret... if only for a little while!",
-                location: " Maui County, Hawaii",
+                location: "Maui County, Hawaii",
                 imageName: "image-0"
             ),
             FeedImageViewModel(
