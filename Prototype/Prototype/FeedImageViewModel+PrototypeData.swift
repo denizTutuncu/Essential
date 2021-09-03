@@ -28,7 +28,7 @@ extension FeedImageViewModel {
                 imageName: "image-2"
             ),
             FeedImageViewModel(
-                description: "Gigi",
+                description: "Gigi ❤️",
                 location: "Los Angeles, Californiaa",
                 imageName: "image-3"
             ),
