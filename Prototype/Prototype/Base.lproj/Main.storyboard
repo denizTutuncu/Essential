@@ -67,7 +67,7 @@
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAz-Am-MIO" userLabel="Image Container">
                                                     <rect key="frame" x="0.0" y="46" width="388" height="388"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T6D-hx-xSy">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T6D-hx-xSy">
                                                             <rect key="frame" x="0.0" y="0.0" width="388" height="388"/>
                                                         </imageView>
                                                     </subviews>
