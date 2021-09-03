@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 extension FeedImageViewModel {
     static var prototypeFeed: [FeedImageViewModel] {
         return [
@@ -38,7 +36,7 @@ extension FeedImageViewModel {
                 imageName: "image-4"
             ),
             FeedImageViewModel(
-                description: "Glorious day in karaburun!! 🌅",
+                description: "Glorious day in Karaburun!! 🌅",
                 location: "Karaburun, Izmir",
                 imageName: "image-5"
             )
