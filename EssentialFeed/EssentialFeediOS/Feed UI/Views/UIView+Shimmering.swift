@@ -9,7 +9,6 @@ import UIKit
 
 extension UIView {
     public var isShimmering: Bool {
-        
         set {
             if newValue {
                 startShimmering()
