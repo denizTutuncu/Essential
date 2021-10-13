@@ -76,6 +76,9 @@
                                                             <state key="normal" title="🔁">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="vjf-9w-JKn" eventType="touchUpInside" id="XFf-FD-tc3"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -117,6 +120,14 @@
                                         <constraint firstItem="6rx-XI-Rxg" firstAttribute="trailing" secondItem="MCG-7V-kqG" secondAttribute="trailingMargin" id="wPd-qn-q2b"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="I5f-W3-z1n" id="tGk-54-1n7"/>
+                                    <outlet property="feedImageContainer" destination="Sui-7H-h1a" id="8W1-h9-P6l"/>
+                                    <outlet property="feedImageRetryButton" destination="Ugi-Ct-rCq" id="0fH-cy-fLv"/>
+                                    <outlet property="feedImageView" destination="Ra4-Wm-ioj" id="htd-MS-6vl"/>
+                                    <outlet property="locationContainer" destination="48o-b8-fef" id="bra-2N-O6s"/>
+                                    <outlet property="locationLabel" destination="AEX-cT-nnS" id="jZO-bi-lha"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
