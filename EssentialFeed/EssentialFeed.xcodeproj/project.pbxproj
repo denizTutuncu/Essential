@@ -401,36 +401,21 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		2E52612E26F3EA4D00DE0406 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				2E52613A26F3EF9E00DE0406 /* UIButton+SimulateTap .swift */,
-				2E52613C26F3EFC300DE0406 /* UIRefreshControl+SimulatePullToRefresh.swift */,
-				2E52613E26F3EFE000DE0406 /* UIImage+Make.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		2E52612F26F3EA5400DE0406 /* Feed UI */ = {
-			isa = PBXGroup;
-			children = (
-				2E52613026F3EA6D00DE0406 /* Controllers */,
-			);
-			path = "Feed UI";
-			sourceTree = "<group>";
-		};
-		2E52613026F3EA6D00DE0406 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				2E52613126F3EA7200DE0406 /* Helpers */,
 				2E657BCD26F13D5900FF00DD /* FeedViewControllerTests.swift */,
 			);
-			path = Controllers;
+			path = "Feed UI";
 			sourceTree = "<group>";
 		};
 		2E52613126F3EA7200DE0406 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2E52613A26F3EF9E00DE0406 /* UIButton+SimulateTap .swift */,
+				2E52613C26F3EFC300DE0406 /* UIRefreshControl+SimulatePullToRefresh.swift */,
+				2E52613E26F3EFE000DE0406 /* UIImage+Make.swift */,
 				2E52613226F3EB8000DE0406 /* FeedImageCell+TestHelpers.swift */,
 				2E52613426F3EC9C00DE0406 /* FeedViewController+TestHelpers.swift */,
 				2E52613626F3ECE300DE0406 /* FeedViewControllerTests+Assertions.swift */,
@@ -463,7 +448,6 @@
 			isa = PBXGroup;
 			children = (
 				2E581AE426E2C23C00785332 /* Info.plist */,
-				2E52612E26F3EA4D00DE0406 /* Helpers */,
 				2E52612F26F3EA5400DE0406 /* Feed UI */,
 			);
 			path = EssentialFeediOSTests;
