@@ -1,6 +1,7 @@
 # Essential
 
 [![Build Status](https://travis-ci.com/denizTutuncu/Essential.svg?branch=main)](https://travis-ci.com/denizTutuncu/Essential)
+
 Dear reviewer, thank you for taking the time to review my project. 
 
 In this project, I pratice SOLID Design Principle with Modular Design to achieve Clean iOS Architecture using XP, TDD, BDD and DDD practices with Unit, Integration, and End-to-End Testing for Continuous Integration, Build and Deployment. 
