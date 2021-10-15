@@ -19,6 +19,6 @@ Architecture Design:
 
 	* Each level doesn’t know anything about the levels below and Each level only knows about the level above.
 
-Currently iOS UI design pattern is MVP. To support MVP better, a couple other UI patterns are implemented too. Eg. Adapter pattern, Composite pattern, Proxy pattern, etc.
+Currently iOS UI design pattern is MVP. To support MVP better, a couple other UI patterns are implemented too. Eg. Decorator pattern, Adapter pattern, Composite pattern, Proxy pattern, etc.
 
 For CI pipeline, I am using Travis CI for this project and I run 2 different scripts to test macOS and iOS specific components. 
