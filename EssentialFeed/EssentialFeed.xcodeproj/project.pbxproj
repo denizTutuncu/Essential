@@ -315,7 +315,7 @@
 				2E05B91E26C39ACC0010860E /* Feed API */,
 				2E05B91B26C368EB0010860E /* Feed Feature */,
 				2EFDAD5F26D0672800430114 /* Feed Cache */,
-				2EAA11A3273351C8006E5EA7 /* Feed Presenttion */,
+				2EAA11A3273351C8006E5EA7 /* Feed Presentation */,
 				2E05B90126C366E90010860E /* Info.plist */,
 			);
 			path = EssentialFeed;
@@ -559,13 +559,13 @@
 			path = "Feed Presentation";
 			sourceTree = "<group>";
 		};
-		2EAA11A3273351C8006E5EA7 /* Feed Presenttion */ = {
+		2EAA11A3273351C8006E5EA7 /* Feed Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				2EAA11A427335219006E5EA7 /* FeedPresenter.swift */,
 				2EAA119F2733503F006E5EA7 /* Feed.strings */,
 			);
-			path = "Feed Presenttion";
+			path = "Feed Presentation";
 			sourceTree = "<group>";
 		};
 		2EB17E3C27181C82003D32FE /* Feed Presentation */ = {
