@@ -2,9 +2,10 @@
 
 [![Build Status](https://travis-ci.com/denizTutuncu/Essential.svg?branch=main)](https://travis-ci.com/denizTutuncu/Essential)
 
-Dear reviewer, thank you for taking the time to review my project. Here, I 
+Dear reviewer, thank you for taking the time to review my project.
 
-<iframe src="https://giphy.com/embed/wEgKvEZ8MdEhvIXiiy" width="222" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/wEgKvEZ8MdEhvIXiiy">via GIPHY</a></p>
+<img src="https://giphy.com/embed/wEgKvEZ8MdEhvIXiiy" width="222" height="480" />
+
 
 In this project, I pratice SOLID Design Principle with Modular Design to achieve Clean iOS Architecture using XP, TDD, BDD and DDD practices with Unit, Integration, and End-to-End Testing for Continuous Integration, Build and Deployment. 
 
