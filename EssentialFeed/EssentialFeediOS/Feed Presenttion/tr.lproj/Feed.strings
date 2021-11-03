@@ -6,3 +6,4 @@
   
 */
 "FEED_VIEW_TITLE" = "Paylaşılanlar";
+"FEED_VIEW_CONNECTION_ERROR" = "Server baglanti hatasi";
