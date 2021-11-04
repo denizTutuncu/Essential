@@ -469,7 +469,6 @@
 			children = (
 				2E581AD826E2C23C00785332 /* Info.plist */,
 				2E52612826F3E94800DE0406 /* Feed Image Loader */,
-				2E6292CF27155EBF006A4419 /* Feed Presenttion */,
 				2E52612926F3E95B00DE0406 /* Feed UI */,
 			);
 			path = EssentialFeediOS;
@@ -482,13 +481,6 @@
 				2E52612F26F3EA5400DE0406 /* Feed UI */,
 			);
 			path = EssentialFeediOSTests;
-			sourceTree = "<group>";
-		};
-		2E6292CF27155EBF006A4419 /* Feed Presenttion */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Feed Presenttion";
 			sourceTree = "<group>";
 		};
 		2E657BCF26F140B400FF00DD /* Frameworks */ = {
