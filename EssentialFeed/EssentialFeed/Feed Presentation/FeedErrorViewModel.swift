@@ -1,6 +1,6 @@
 //
 //  FeedErrorViewModel.swift
-//  EssentialFeediOS
+//  EssentialFeed
 //
 //  Created by Deniz Tutuncu on 11/3/21.
 //
