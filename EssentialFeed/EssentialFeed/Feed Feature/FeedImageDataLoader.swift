@@ -1,8 +1,8 @@
 //
 //  FeedImageDataLoader.swift
-//  EssentialFeediOS
+//  EssentialFeed
 //
-//  Created by Deniz Tutuncu on 9/16/21.
+//  Created by Deniz Tutuncu on 11/5/21.
 //
 
 import Foundation
