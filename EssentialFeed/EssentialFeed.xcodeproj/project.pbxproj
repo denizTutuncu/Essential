@@ -353,11 +353,11 @@
 			children = (
 				2E85689E2739F82600E88E54 /* Helpers */,
 				2E05B91F26C39B3B0010860E /* RemoteFeedLoader.swift */,
-				2E05B92126C4F2C40010860E /* HTTPClient.swift */,
-				2E05B92B26C631500010860E /* URLSessionHTTPClient.swift */,
 				2E05B92326C4F3320010860E /* FeedItemsMapper.swift */,
 				2EFDAD6426D0720100430114 /* RemoteFeedItem.swift */,
 				2E85689C2739F46700E88E54 /* RemoteFeedImageDataLoader.swift */,
+				2E05B92126C4F2C40010860E /* HTTPClient.swift */,
+				2E05B92B26C631500010860E /* URLSessionHTTPClient.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
