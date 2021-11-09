@@ -44,7 +44,7 @@
 		2E85689D2739F46700E88E54 /* RemoteFeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E85689C2739F46700E88E54 /* RemoteFeedImageDataLoader.swift */; };
 		2E8568A02739F83F00E88E54 /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E85689F2739F83F00E88E54 /* HTTPURLResponse+StatusCode.swift */; };
 		2E8568A22739F8E700E88E54 /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8568A12739F8E700E88E54 /* URLProtocolStub.swift */; };
-		2E8568A4273B20F700E88E54 /* LocalFeedImageDataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8568A3273B20F700E88E54 /* LocalFeedImageDataLoaderTests.swift */; };
+		2E8568A4273B20F700E88E54 /* LoadFeedImageDataFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8568A3273B20F700E88E54 /* LoadFeedImageDataFromCacheUseCaseTests.swift */; };
 		2E8568A6273B26D200E88E54 /* FeedImageDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8568A5273B26D200E88E54 /* FeedImageDataStore.swift */; };
 		2E8568A8273B270000E88E54 /* LocalFeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8568A7273B270000E88E54 /* LocalFeedImageDataLoader.swift */; };
 		2E98F0F026D085A6001385F8 /* LoadFeedFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E98F0EF26D085A6001385F8 /* LoadFeedFromCacheUseCaseTests.swift */; };
@@ -189,7 +189,7 @@
 		2E85689C2739F46700E88E54 /* RemoteFeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedImageDataLoader.swift; sourceTree = "<group>"; };
 		2E85689F2739F83F00E88E54 /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
 		2E8568A12739F8E700E88E54 /* URLProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
-		2E8568A3273B20F700E88E54 /* LocalFeedImageDataLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImageDataLoaderTests.swift; sourceTree = "<group>"; };
+		2E8568A3273B20F700E88E54 /* LoadFeedImageDataFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedImageDataFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		2E8568A5273B26D200E88E54 /* FeedImageDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataStore.swift; sourceTree = "<group>"; };
 		2E8568A7273B270000E88E54 /* LocalFeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImageDataLoader.swift; sourceTree = "<group>"; };
 		2E98F0EF26D085A6001385F8 /* LoadFeedFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
@@ -406,7 +406,7 @@
 				2E98F0EF26D085A6001385F8 /* LoadFeedFromCacheUseCaseTests.swift */,
 				2E98F0F426D0DB7F001385F8 /* ValidateFeedCacheUseCaseTests.swift */,
 				2EEC994426DEE05400FF7EFF /* CoreDataFeedStoreTests.swift */,
-				2E8568A3273B20F700E88E54 /* LocalFeedImageDataLoaderTests.swift */,
+				2E8568A3273B20F700E88E54 /* LoadFeedImageDataFromCacheUseCaseTests.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -905,7 +905,7 @@
 				2E05B91D26C36D960010860E /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
 				2EAA11AD273356C8006E5EA7 /* FeedLocalizationTests.swift in Sources */,
 				2E05B92726C5A1420010860E /* URLSessionHTTPClientTests.swift in Sources */,
-				2E8568A4273B20F700E88E54 /* LocalFeedImageDataLoaderTests.swift in Sources */,
+				2E8568A4273B20F700E88E54 /* LoadFeedImageDataFromCacheUseCaseTests.swift in Sources */,
 				2E85689B2739F2F400E88E54 /* HTTPClientSpy.swift in Sources */,
 				2E98F0F326D0872A001385F8 /* FeedStoreSpy.swift in Sources */,
 				2E98F0F926D0E192001385F8 /* SharedTestHelpers.swift in Sources */,
