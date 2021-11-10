@@ -22,7 +22,7 @@ public class CoreDataFeedStore: FeedStore {
         perform { context in
             completion(Result {
                 try ManagedCache.find(in: context).map {
-                return CachedFeed(feed: $0.localFeed, timestamp: $0.timestamp)
+                    return CachedFeed(feed: $0.localFeed, timestamp: $0.timestamp)
                 }
             })
         }
@@ -48,7 +48,8 @@ public class CoreDataFeedStore: FeedStore {
         }
     }
     
-    private func perform(_ action: @escaping (NSManagedObjectContext) -> Void) {
-        context.perform { [context] in action(context) }
+    func perform(_ action: @escaping (NSManagedObjectContext) -> Void) {
+        let context = self.context
+        context.perform { action(context) }
     }
 }
